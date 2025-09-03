@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class rollercoaster {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter name:");
+        String name = sc.nextLine();
+
+        System.out.println("Enter age:");
+        int age = sc.nextInt();
+
+        System.out.println("Enter height:");
+        double height = (int) sc.nextDouble();
+
+        System.out.println("Enter coaster name:");
+        String rollercoastername = sc.nextLine();
+
+        if (height < 190){
+            System.out.println("Congrats you are tall enough" + name +" " + "Enjoy the ride!");
+        } else{
+            System.out.println("You are not tall enough" + " " + name + " " + "Go away");
+        }
+    }
+}
